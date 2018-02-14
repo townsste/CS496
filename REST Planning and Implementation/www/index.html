@@ -1,0 +1,113 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Townsend REST API</title>
+	</head>
+	<body>
+		<h1>Townsend REST Implementation NOTES</h1>
+		<div>
+			<center><h2>Here are the notes that will help with the demonstration of the REST API.</h2></center>
+			<div>
+				<h3>App is hosted at:</h3>
+					<p>https://cs496-rest-townsend.appspot.com</p>
+			</div>
+			<div>
+				<h3>Making API Calls</h3>
+				<p>To make api calls you will need the hosted url in each call as the {base url}<br>
+				Example: GET https://cs496-rest-townsend.appspot.com<br><br>
+				Anything in {} or double {}, will need to be filled in as indicated below.<br>
+				After a boat or slip is created then they will have a unique ID attached.<br><br>
+				You can get this ID by a GET boats or slips call.<br>
+				Example: GET https://cs496-rest-townsend.appspot.com/boats<br><br>
+				This call will return a json with specific information.<br>
+				Parse through the json to get the ID.<br>
+				This ID will be required to make modifications.</p>
+			</div>
+			<div>
+				<p>Goodluck, have fun, and thank you visiting.<br>
+				---Stephen Townsend</p>
+			</div>
+			<div>
+				<h3>All the Rest API calls:</h3>
+					<ul>
+						<li>GET 	/boats   /{boatID} 				</li>
+						<li>GET 	/boats 							</li>
+						<li>GET 	/slips     /{slipID}			</li>
+						<li>GET 	/slips 							</li>
+						<li>POST 	/boats 							</li>
+						<li>POST 	/slips 							</li>
+						<li>PATCH 	/boats   /{boatID} 				</li>
+						<li>PATCH 	/slips     /{slipID} 			</li>
+						<li>PUT 	/slips     /{slipID}    /dock 	</li>
+						<li>DELETE	/slips     /{slipID}			</li>
+						<li>DELETE	/slips							</li>
+						<li>DELETE 	/boats   /{boatID}				</li>
+						<li>DELETE	/boats							</li>
+					</ul>
+			</div>
+			<div>
+				<h3>Information about calls:</h3>
+				<center><h4>BOAT URL’s</h4></center>
+					<p><b>POST /boats</b><br>
+					Details: This call is used to create a boat.  The inputs for the json body is going to be name, type, and length.<br>
+					Input: {"name":"Name Here", "type":"Type Here", "length": "Length Here"}<br>
+					Notes: All boats are set to at_sea as they are created</p>
+
+					<p><b>GET /boats/{boatID}</b><br>
+					Details: This call is used to get all the information about a specific boat based on the supplied {boatID}.</p>
+
+					<p><b>GET /boats</b><br>
+					Details: This call is used to get a list of all the boats and the information about each boat.</p>
+
+					<p><b>PATCH /boats/{boatID}</b><br>
+					Details: This call is used to update boat information.  This is also where a boat will leave a slip when this condition is meet.  These condition is being in a slip.<br>
+					Input: {"name":"Name Here", "type":"Type Here", "length": "Length Here"}<br>
+					Notes: To ove a ship out of a slip into the sea see the optional input below<br>
+					Optional Input: {"at_sea": true}</p>
+
+					<p><b>DELETE /boats/{boatID}</b><br>
+					Details: This call will delete a specific boat based on the supplied {boatID}</p>
+
+					<p><b>DELETE /boats</b><br>
+					Details: This call will delete all of the boats in the database.</p>
+
+				<center><h4>SLIP URL’s</h4></center>
+					<p><b>POST /slips</b><br>
+					Details: This call is used to create a slip.  The only input for the json body is number.<br>
+					Input: {"number": integer}</p>
+
+					<p><b>GET /slips</b><br>
+					Details: This call is used to get all the information about a specific slip based on the supplied {slipID}.</p>
+
+					<p><b>GET /slips/{slipID}</b><br>
+					Details: This call is used to get a list of all the boats and the information about each boat.</p>
+
+					<p><b>PATCH 	/slips/{slipID} </b><br>
+					Details: This call is used to update a slip.  The only option is to modify the slip number.<br>
+					Input: {"number": integer}</p>
+
+					<p><b>DELETE /slips/{slipID}</b><br>
+					Details: This call will delete a specific slip based on the supplied {slipID}</p>
+
+					<p><b>DELETE /slips</b><br>
+					Details: This call will delete all of the slips in the database.</p>
+
+				<center><h4>DOCK A BOAT URL</h4></center>
+					<p><b>PUT /slips/{slipID}/dock</b><br>
+					Details: This call is used to place a boat into a slip.<br>
+					Input: {"current_boat":"{boatID}", "arrival_date":”Date Here”}</p>
+			</div>
+
+			<div>
+				<h3>Extra Credit:</h3>
+					<p>This application will also automatically keep track of the slips departure history.<br>  
+					This is done at two times. Both times will require that a boat to be in a slip.<br>
+					First, when a boat is called to be deleted.  Second, when a boat is moving from slip to at sea.<br>
+					This is done from the PATCH /boats/{boatID} call.<br>
+					The json body will need to have {at_sea  =  true}.<br><br>
+
+					Both of these instances will place the boat name and the arrival date into the slips departure_history.</p>
+			</div>
+		</div>
+	</body>
+</html>

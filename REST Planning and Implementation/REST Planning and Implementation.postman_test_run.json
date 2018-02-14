@@ -1,0 +1,2788 @@
+{
+	"id": "55b7d511-b56d-431d-8231-dc7096dfa6a0",
+	"name": "REST Planning and Implementation",
+	"allTests": [],
+	"timestamp": "2018-02-03T09:16:42.082Z",
+	"collection_id": "bd71f073-b2f3-da88-90e4-81e6b3065b89",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "no-environment",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "bd71f073-b2f3-da88-90e4-81e6b3065b89",
+		"name": "REST Planning and Implementation",
+		"description": "",
+		"order": [
+			"aff87903-7a9d-56bc-3c62-eaa7cc89560f",
+			"fb8a2b5d-b485-9c14-3e79-10b436097e6f",
+			"e9d9f4a6-3c0b-105c-b928-39063daff414",
+			"7d93f76c-67f7-d48d-3abc-55d0528a5ed8",
+			"a17f02a0-170a-245c-ebe4-627649137bd6",
+			"3d64f6ee-91eb-44d3-96a5-1aba891ef43e",
+			"dd597597-d109-ac12-63e2-e8f4ea6a6eb7",
+			"5f0e0712-032e-1c08-60e5-363978b8787e",
+			"60233dfb-0c76-14a8-490e-5042c5835305",
+			"f24da4fc-cd72-2efb-7d73-bd89b754758d",
+			"85e14ec9-46bd-c284-0989-5d4e4846b895",
+			"0ccfc92b-ca68-ef2f-c959-b7b123c46407",
+			"c457d2e9-1023-a39c-395d-3136e4691318",
+			"bdce01dc-2143-5ee4-f161-68d290fcde6f",
+			"903703aa-17d0-764c-9ac7-646612f784a8",
+			"7b947f75-a090-1c17-5dcd-ca2e55a84199",
+			"01be6e99-6794-02c6-c562-a1fe97b72394",
+			"4f122a47-9b3a-1af1-05f4-3fbc6ab5b307",
+			"f20eeec6-6a2d-9163-cfa8-afbbc000b0c6",
+			"95fdf944-502c-914c-664a-15c5bdd183fe",
+			"cca4da95-9c0d-2e4d-4164-c8e48592e83a",
+			"752889a1-55e6-a67a-3a71-0d206440985c",
+			"3d5ba7cc-96af-f6b2-573c-ca8a20793750",
+			"2093aa3f-0e84-6863-19c2-5c96c4c6381a",
+			"882a16aa-c835-0335-a23f-0f2d44a312d7",
+			"a0ee060f-7131-6794-eb99-e349c0395df1",
+			"320d3750-9e75-e651-82c0-c86db09c170d",
+			"06f41f81-92f6-f0f7-e72e-2791d58a1617",
+			"88463091-c701-4c3c-d643-50939e6912ee",
+			"eec43db4-40e2-03a3-f6f2-ce1a2bab37e9",
+			"777587c1-4244-842c-f915-3efae315fc6b",
+			"f97770e8-31fd-79e9-c256-9456c082b388",
+			"baaaa8ae-e6c2-9695-c4b0-f8bc29accdb9",
+			"7fd47077-9f35-fe12-b2e3-25fc6962bbb7",
+			"8b208836-8bfa-c1d0-7b20-1c68a12ea53b",
+			"58947718-1181-cf0c-0150-a8d7d5366ebb",
+			"22b45d59-5916-3a43-966e-f01002903d7f",
+			"a12ed8cc-5020-7faf-bc13-d23b370dde34",
+			"88964844-9cdf-2786-252a-ca985605fe2a",
+			"63d3f200-721b-2980-edfa-4d50f0e8fa91",
+			"203c0e44-642c-bcbf-6acb-cb439d301ca2",
+			"4c55c6ee-8e80-5b9c-a335-72ac8591a862",
+			"afdc7060-78fe-baf2-c904-ad07ce02932f",
+			"0f24fdc9-1f7e-3f19-939d-cc98fe6ffea0",
+			"ba0804cc-542d-7c32-5ec3-70e035cf1010",
+			"3d04bed9-51cb-a8c8-e286-8dbca5bba7b5",
+			"70a122d0-474f-56c0-8093-0f46a72ecc39",
+			"a6da262f-2353-f320-0172-0e97f280bcf4",
+			"8b813810-0b8b-22d8-9ee2-de0e69fa95c3",
+			"ef1069ff-d1a0-11f8-0c89-4d833c6701be"
+		],
+		"folders": [],
+		"folders_order": [],
+		"timestamp": 1517649051311,
+		"synced": true,
+		"remote_id": 0,
+		"owner": "3566184",
+		"sharedWithTeam": false,
+		"subscribed": false,
+		"remoteLink": "",
+		"remoteLinkUpdatedAt": null,
+		"public": false,
+		"createdAt": 1517649051311,
+		"updatedAt": 1517649389887,
+		"write": true,
+		"published": false,
+		"favorite": false,
+		"permissions": {},
+		"syncedPermissions": {},
+		"events": [],
+		"variables": [],
+		"auth": null
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [
+		{
+			"key": "echo_digest_realm",
+			"value": "Users",
+			"enabled": true,
+			"type": "text"
+		},
+		{
+			"key": "echo_digest_nonce",
+			"value": "DLZdaSjgzTEJRYsDSymSqHfhVOwKTeeG",
+			"enabled": true,
+			"type": "text"
+		}
+	],
+	"results": [
+		{
+			"name": "Create new boat",
+			"id": "aff87903-7a9d-56bc-3c62-eaa7cc89560f",
+			"url": "https://cs496-191817.appspot.com/boats",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"tests": {
+				"SUCCESS: new boat was created": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: new boat was created": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"1225"
+			],
+			"allTests": [
+				{
+					"SUCCESS: new boat was created": true
+				}
+			],
+			"time": "1225",
+			"totalRequestTime": "1225",
+			"iterationResults": {}
+		},
+		{
+			"name": "Get a single boat",
+			"id": "fb8a2b5d-b485-9c14-3e79-10b436097e6f",
+			"url": "https://cs496-191817.appspot.com/boats/ag5zfmNzNDk2LTE5MTgxN3IRCxIEQm9hdBiAgICAgICACgw",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"SUCCESS: Boat is at sea.": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: Boat is at sea.": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"406"
+			],
+			"allTests": [
+				{
+					"SUCCESS: Boat is at sea.": true
+				}
+			],
+			"time": "406",
+			"totalRequestTime": "406",
+			"iterationResults": {}
+		},
+		{
+			"name": "Create new boat - bad body",
+			"id": "e9d9f4a6-3c0b-105c-b928-39063daff414",
+			"url": "https://cs496-191817.appspot.com/boats",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {
+				"SUCCESS: error caught, bad body": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: error caught, bad body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"142"
+			],
+			"allTests": [
+				{
+					"SUCCESS: error caught, bad body": true
+				}
+			],
+			"time": "142",
+			"totalRequestTime": "142",
+			"iterationResults": {}
+		},
+		{
+			"name": "Create new boat - bad body extra",
+			"id": "7d93f76c-67f7-d48d-3abc-55d0528a5ed8",
+			"url": "https://cs496-191817.appspot.com/boats",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {
+				"SUCCESS: error caught, bad body": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: error caught, bad body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"136"
+			],
+			"allTests": [
+				{
+					"SUCCESS: error caught, bad body": true
+				}
+			],
+			"time": "136",
+			"totalRequestTime": "136",
+			"iterationResults": {}
+		},
+		{
+			"name": "Delete boat",
+			"id": "a17f02a0-170a-245c-ebe4-627649137bd6",
+			"url": "https://cs496-191817.appspot.com/boats/ag5zfmNzNDk2LTE5MTgxN3IRCxIEQm9hdBiAgICAgICACgw",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"SUCCESS: boat was deleted": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: boat was deleted": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"351"
+			],
+			"allTests": [
+				{
+					"SUCCESS: boat was deleted": true
+				}
+			],
+			"time": "351",
+			"totalRequestTime": "351",
+			"iterationResults": {}
+		},
+		{
+			"name": "Create new boat",
+			"id": "3d64f6ee-91eb-44d3-96a5-1aba891ef43e",
+			"url": "https://cs496-191817.appspot.com/boats",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"tests": {
+				"SUCCESS: new boat was created": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: new boat was created": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"576"
+			],
+			"allTests": [
+				{
+					"SUCCESS: new boat was created": true
+				}
+			],
+			"time": "576",
+			"totalRequestTime": "576",
+			"iterationResults": {}
+		},
+		{
+			"name": "Patch boat",
+			"id": "dd597597-d109-ac12-63e2-e8f4ea6a6eb7",
+			"url": "https://cs496-191817.appspot.com/boats/ag5zfmNzNDk2LTE5MTgxN3IRCxIEQm9hdBiAgICA-MKECgw",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"SUCCESS: boat data was updated": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: boat data was updated": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"263"
+			],
+			"allTests": [
+				{
+					"SUCCESS: boat data was updated": true
+				}
+			],
+			"time": "263",
+			"totalRequestTime": "263",
+			"iterationResults": {}
+		},
+		{
+			"name": "Patch boat - bad already at sea",
+			"id": "5f0e0712-032e-1c08-60e5-363978b8787e",
+			"url": "https://cs496-191817.appspot.com/boats/ag5zfmNzNDk2LTE5MTgxN3IRCxIEQm9hdBiAgICA-MKECgw",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {
+				"SUCCESS: error caught, bad boat id": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: error caught, bad boat id": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"213"
+			],
+			"allTests": [
+				{
+					"SUCCESS: error caught, bad boat id": true
+				}
+			],
+			"time": "213",
+			"totalRequestTime": "213",
+			"iterationResults": {}
+		},
+		{
+			"name": "Patch boat - bad needs a slip",
+			"id": "60233dfb-0c76-14a8-490e-5042c5835305",
+			"url": "https://cs496-191817.appspot.com/boats/ag5zfmNzNDk2LTE5MTgxN3IRCxIEQm9hdBiAgICA-MKECgw",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {
+				"SUCCESS: error caught, bad boat id": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: error caught, bad boat id": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"248"
+			],
+			"allTests": [
+				{
+					"SUCCESS: error caught, bad boat id": true
+				}
+			],
+			"time": "248",
+			"totalRequestTime": "248",
+			"iterationResults": {}
+		},
+		{
+			"name": "Patch boat - bad boat id",
+			"id": "f24da4fc-cd72-2efb-7d73-bd89b754758d",
+			"url": "https://cs496-191817.appspot.com/boats/aghkZ",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"tests": {
+				"SUCCESS: error caught, bad boat id": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: error caught, bad boat id": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"198"
+			],
+			"allTests": [
+				{
+					"SUCCESS: error caught, bad boat id": true
+				}
+			],
+			"time": "198",
+			"totalRequestTime": "198",
+			"iterationResults": {}
+		},
+		{
+			"name": "Patch boat - bad body",
+			"id": "85e14ec9-46bd-c284-0989-5d4e4846b895",
+			"url": "https://cs496-191817.appspot.com/boats/ag5zfmNzNDk2LTE5MTgxN3IRCxIEQm9hdBiAgICA-MKECgw",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {
+				"SUCCESS: error caught, bad body": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: error caught, bad body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"192"
+			],
+			"allTests": [
+				{
+					"SUCCESS: error caught, bad body": true
+				}
+			],
+			"time": "192",
+			"totalRequestTime": "192",
+			"iterationResults": {}
+		},
+		{
+			"name": "Delete boat",
+			"id": "0ccfc92b-ca68-ef2f-c959-b7b123c46407",
+			"url": "https://cs496-191817.appspot.com/boats/ag5zfmNzNDk2LTE5MTgxN3IRCxIEQm9hdBiAgICA-MKECgw",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"SUCCESS: boat was deleted": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: boat was deleted": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"301"
+			],
+			"allTests": [
+				{
+					"SUCCESS: boat was deleted": true
+				}
+			],
+			"time": "301",
+			"totalRequestTime": "301",
+			"iterationResults": {}
+		},
+		{
+			"name": "Create new slip",
+			"id": "c457d2e9-1023-a39c-395d-3136e4691318",
+			"url": "https://cs496-191817.appspot.com/slips",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"tests": {
+				"SUCCESS: new slip was created": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: new slip was created": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"594"
+			],
+			"allTests": [
+				{
+					"SUCCESS: new slip was created": true
+				}
+			],
+			"time": "594",
+			"totalRequestTime": "594",
+			"iterationResults": {}
+		},
+		{
+			"name": "Get a single slip",
+			"id": "bdce01dc-2143-5ee4-f161-68d290fcde6f",
+			"url": "https://cs496-191817.appspot.com/slips/ag5zfmNzNDk2LTE5MTgxN3IRCxIEU2xpcBiAgICAvKGCCgw",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"SUCCESS: Slip is empty.": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: Slip is empty.": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"211"
+			],
+			"allTests": [
+				{
+					"SUCCESS: Slip is empty.": true
+				}
+			],
+			"time": "211",
+			"totalRequestTime": "211",
+			"iterationResults": {}
+		},
+		{
+			"name": "Create new slip - bad body",
+			"id": "903703aa-17d0-764c-9ac7-646612f784a8",
+			"url": "https://cs496-191817.appspot.com/slips",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {
+				"SUCCESS: error caught, bad body": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: error caught, bad body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"264"
+			],
+			"allTests": [
+				{
+					"SUCCESS: error caught, bad body": true
+				}
+			],
+			"time": "264",
+			"totalRequestTime": "264",
+			"iterationResults": {}
+		},
+		{
+			"name": "Create new slip - bad slip number",
+			"id": "7b947f75-a090-1c17-5dcd-ca2e55a84199",
+			"url": "https://cs496-191817.appspot.com/slips",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {
+				"SUCCESS: error caught, bad slip number": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: error caught, bad slip number": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"209"
+			],
+			"allTests": [
+				{
+					"SUCCESS: error caught, bad slip number": true
+				}
+			],
+			"time": "209",
+			"totalRequestTime": "209",
+			"iterationResults": {}
+		},
+		{
+			"name": "Patch slip",
+			"id": "01be6e99-6794-02c6-c562-a1fe97b72394",
+			"url": "https://cs496-191817.appspot.com/slips/ag5zfmNzNDk2LTE5MTgxN3IRCxIEU2xpcBiAgICAvKGCCgw",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"SUCCESS: slip 'number' was updated": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: slip 'number' was updated": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"202"
+			],
+			"allTests": [
+				{
+					"SUCCESS: slip 'number' was updated": true
+				}
+			],
+			"time": "202",
+			"totalRequestTime": "202",
+			"iterationResults": {}
+		},
+		{
+			"name": "Patch slip - bad body",
+			"id": "4f122a47-9b3a-1af1-05f4-3fbc6ab5b307",
+			"url": "https://cs496-191817.appspot.com/slips/ag5zfmNzNDk2LTE5MTgxN3IRCxIEU2xpcBiAgICAvKGCCgw",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {
+				"SUCCESS: error caught, bad body": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: error caught, bad body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"130"
+			],
+			"allTests": [
+				{
+					"SUCCESS: error caught, bad body": true
+				}
+			],
+			"time": "130",
+			"totalRequestTime": "130",
+			"iterationResults": {}
+		},
+		{
+			"name": "Patch slip - no id",
+			"id": "f20eeec6-6a2d-9163-cfa8-afbbc000b0c6",
+			"url": "https://cs496-191817.appspot.com/slips/",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {
+				"SUCCESS: error caught, bad slip id": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: error caught, bad slip id": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"157"
+			],
+			"allTests": [
+				{
+					"SUCCESS: error caught, bad slip id": true
+				}
+			],
+			"time": "157",
+			"totalRequestTime": "157",
+			"iterationResults": {}
+		},
+		{
+			"name": "Patch slip - bad slip id",
+			"id": "95fdf944-502c-914c-664a-15c5bdd183fe",
+			"url": "https://cs496-191817.appspot.com/slips/aghkZ",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"tests": {
+				"SUCCESS: error caught, bad slip id": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: error caught, bad slip id": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"188"
+			],
+			"allTests": [
+				{
+					"SUCCESS: error caught, bad slip id": true
+				}
+			],
+			"time": "188",
+			"totalRequestTime": "188",
+			"iterationResults": {}
+		},
+		{
+			"name": "Delete slip",
+			"id": "cca4da95-9c0d-2e4d-4164-c8e48592e83a",
+			"url": "https://cs496-191817.appspot.com/slips/ag5zfmNzNDk2LTE5MTgxN3IRCxIEU2xpcBiAgICAvKGCCgw",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"SUCCESS: slip was deleted": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: slip was deleted": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"303"
+			],
+			"allTests": [
+				{
+					"SUCCESS: slip was deleted": true
+				}
+			],
+			"time": "303",
+			"totalRequestTime": "303",
+			"iterationResults": {}
+		},
+		{
+			"name": "Create new boat",
+			"id": "752889a1-55e6-a67a-3a71-0d206440985c",
+			"url": "https://cs496-191817.appspot.com/boats",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"tests": {
+				"SUCCESS: new boat was created": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: new boat was created": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"460"
+			],
+			"allTests": [
+				{
+					"SUCCESS: new boat was created": true
+				}
+			],
+			"time": "460",
+			"totalRequestTime": "460",
+			"iterationResults": {}
+		},
+		{
+			"name": "Create new slip",
+			"id": "3d5ba7cc-96af-f6b2-573c-ca8a20793750",
+			"url": "https://cs496-191817.appspot.com/slips",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"tests": {
+				"SUCCESS: new slip was created": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: new slip was created": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"430"
+			],
+			"allTests": [
+				{
+					"SUCCESS: new slip was created": true
+				}
+			],
+			"time": "430",
+			"totalRequestTime": "430",
+			"iterationResults": {}
+		},
+		{
+			"name": "Put boat in slip",
+			"id": "2093aa3f-0e84-6863-19c2-5c96c4c6381a",
+			"url": "https://cs496-191817.appspot.com/slips/ag5zfmNzNDk2LTE5MTgxN3IRCxIEU2xpcBiAgICA3pCBCgw/dock",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"tests": {
+				"SUCCESS: boat was placed in a slip": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: boat was placed in a slip": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"330"
+			],
+			"allTests": [
+				{
+					"SUCCESS: boat was placed in a slip": true
+				}
+			],
+			"time": "330",
+			"totalRequestTime": "330",
+			"iterationResults": {}
+		},
+		{
+			"name": "Delete boat",
+			"id": "882a16aa-c835-0335-a23f-0f2d44a312d7",
+			"url": "https://cs496-191817.appspot.com/boats/ag5zfmNzNDk2LTE5MTgxN3IRCxIEQm9hdBiAgICA2uOGCgw",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"SUCCESS: boat was deleted": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: boat was deleted": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"314"
+			],
+			"allTests": [
+				{
+					"SUCCESS: boat was deleted": true
+				}
+			],
+			"time": "314",
+			"totalRequestTime": "314",
+			"iterationResults": {}
+		},
+		{
+			"name": "Get a single slip",
+			"id": "a0ee060f-7131-6794-eb99-e349c0395df1",
+			"url": "https://cs496-191817.appspot.com/slips/ag5zfmNzNDk2LTE5MTgxN3IRCxIEU2xpcBiAgICA3pCBCgw",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"SUCCESS: Boat is in slip and current_boat: Boat ID and arrival_date: 1/31/2018": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: Boat is in slip and current_boat: Boat ID and arrival_date: 1/31/2018": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"126"
+			],
+			"allTests": [
+				{
+					"SUCCESS: Boat is in slip and current_boat: Boat ID and arrival_date: 1/31/2018": true
+				}
+			],
+			"time": "126",
+			"totalRequestTime": "126",
+			"iterationResults": {}
+		},
+		{
+			"name": "Delete slip",
+			"id": "320d3750-9e75-e651-82c0-c86db09c170d",
+			"url": "https://cs496-191817.appspot.com/slips/ag5zfmNzNDk2LTE5MTgxN3IRCxIEU2xpcBiAgICA3pCBCgw",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"SUCCESS: slip was deleted": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: slip was deleted": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"226"
+			],
+			"allTests": [
+				{
+					"SUCCESS: slip was deleted": true
+				}
+			],
+			"time": "226",
+			"totalRequestTime": "226",
+			"iterationResults": {}
+		},
+		{
+			"name": "Create new slip",
+			"id": "06f41f81-92f6-f0f7-e72e-2791d58a1617",
+			"url": "https://cs496-191817.appspot.com/slips",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"tests": {
+				"SUCCESS: new slip was created": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: new slip was created": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"645"
+			],
+			"allTests": [
+				{
+					"SUCCESS: new slip was created": true
+				}
+			],
+			"time": "645",
+			"totalRequestTime": "645",
+			"iterationResults": {}
+		},
+		{
+			"name": "Create new boat",
+			"id": "88463091-c701-4c3c-d643-50939e6912ee",
+			"url": "https://cs496-191817.appspot.com/boats",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"tests": {
+				"SUCCESS: new boat was created": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: new boat was created": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"331"
+			],
+			"allTests": [
+				{
+					"SUCCESS: new boat was created": true
+				}
+			],
+			"time": "331",
+			"totalRequestTime": "331",
+			"iterationResults": {}
+		},
+		{
+			"name": "Put boat in slip",
+			"id": "eec43db4-40e2-03a3-f6f2-ce1a2bab37e9",
+			"url": "https://cs496-191817.appspot.com/slips/ag5zfmNzNDk2LTE5MTgxN3IRCxIEU2xpcBiAgICA-JaVCgw/dock",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"tests": {
+				"SUCCESS: boat was placed in a slip": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: boat was placed in a slip": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"310"
+			],
+			"allTests": [
+				{
+					"SUCCESS: boat was placed in a slip": true
+				}
+			],
+			"time": "310",
+			"totalRequestTime": "310",
+			"iterationResults": {}
+		},
+		{
+			"name": "Delete boat",
+			"id": "777587c1-4244-842c-f915-3efae315fc6b",
+			"url": "https://cs496-191817.appspot.com/boats/ag5zfmNzNDk2LTE5MTgxN3IRCxIEQm9hdBiAgICA2reXCgw",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"SUCCESS: boat was deleted": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: boat was deleted": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"236"
+			],
+			"allTests": [
+				{
+					"SUCCESS: boat was deleted": true
+				}
+			],
+			"time": "236",
+			"totalRequestTime": "236",
+			"iterationResults": {}
+		},
+		{
+			"name": "Get a single slip",
+			"id": "f97770e8-31fd-79e9-c256-9456c082b388",
+			"url": "https://cs496-191817.appspot.com/slips/ag5zfmNzNDk2LTE5MTgxN3IRCxIEU2xpcBiAgICA-JaVCgw",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"SUCCESS: Boat information was removed from slip.": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: Boat information was removed from slip.": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"127"
+			],
+			"allTests": [
+				{
+					"SUCCESS: Boat information was removed from slip.": true
+				}
+			],
+			"time": "127",
+			"totalRequestTime": "127",
+			"iterationResults": {}
+		},
+		{
+			"name": "Create new boat",
+			"id": "baaaa8ae-e6c2-9695-c4b0-f8bc29accdb9",
+			"url": "https://cs496-191817.appspot.com/boats",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"tests": {
+				"SUCCESS: new boat was created": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: new boat was created": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"309"
+			],
+			"allTests": [
+				{
+					"SUCCESS: new boat was created": true
+				}
+			],
+			"time": "309",
+			"totalRequestTime": "309",
+			"iterationResults": {}
+		},
+		{
+			"name": "Put boat in slip",
+			"id": "7fd47077-9f35-fe12-b2e3-25fc6962bbb7",
+			"url": "https://cs496-191817.appspot.com/slips/ag5zfmNzNDk2LTE5MTgxN3IRCxIEU2xpcBiAgICA-JaVCgw/dock",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"tests": {
+				"SUCCESS: boat was placed in a slip": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: boat was placed in a slip": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"279"
+			],
+			"allTests": [
+				{
+					"SUCCESS: boat was placed in a slip": true
+				}
+			],
+			"time": "279",
+			"totalRequestTime": "279",
+			"iterationResults": {}
+		},
+		{
+			"name": "Patch boat - send to sea",
+			"id": "8b208836-8bfa-c1d0-7b20-1c68a12ea53b",
+			"url": "https://cs496-191817.appspot.com/boats/ag5zfmNzNDk2LTE5MTgxN3IRCxIEQm9hdBiAgICA-JaVCQw",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"SUCCESS: send boat out to sea from slip": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: send boat out to sea from slip": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"231"
+			],
+			"allTests": [
+				{
+					"SUCCESS: send boat out to sea from slip": true
+				}
+			],
+			"time": "231",
+			"totalRequestTime": "231",
+			"iterationResults": {}
+		},
+		{
+			"name": "Get a single boat",
+			"id": "58947718-1181-cf0c-0150-a8d7d5366ebb",
+			"url": "https://cs496-191817.appspot.com/boats/ag5zfmNzNDk2LTE5MTgxN3IRCxIEQm9hdBiAgICA-JaVCQw",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"SUCCESS: Boat no longer has a slip and is at sea.": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: Boat no longer has a slip and is at sea.": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"131"
+			],
+			"allTests": [
+				{
+					"SUCCESS: Boat no longer has a slip and is at sea.": true
+				}
+			],
+			"time": "131",
+			"totalRequestTime": "131",
+			"iterationResults": {}
+		},
+		{
+			"name": "Get a single slip",
+			"id": "22b45d59-5916-3a43-966e-f01002903d7f",
+			"url": "https://cs496-191817.appspot.com/slips/ag5zfmNzNDk2LTE5MTgxN3IRCxIEU2xpcBiAgICA-JaVCgw",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"SUCCESS: Boat information was removed from slip.": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: Boat information was removed from slip.": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"129"
+			],
+			"allTests": [
+				{
+					"SUCCESS: Boat information was removed from slip.": true
+				}
+			],
+			"time": "129",
+			"totalRequestTime": "129",
+			"iterationResults": {}
+		},
+		{
+			"name": "EXTRA CREDIT Depature History",
+			"id": "a12ed8cc-5020-7faf-bc13-d23b370dde34",
+			"url": "https://cs496-191817.appspot.com/slips/ag5zfmNzNDk2LTE5MTgxN3IRCxIEU2xpcBiAgICA-JaVCgw",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"EXTRA CREDIT: Slips departure_history is updated to two boats.": true
+			},
+			"testPassFailCounts": {
+				"EXTRA CREDIT: Slips departure_history is updated to two boats.": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"137"
+			],
+			"allTests": [
+				{
+					"EXTRA CREDIT: Slips departure_history is updated to two boats.": true
+				}
+			],
+			"time": "137",
+			"totalRequestTime": "137",
+			"iterationResults": {}
+		},
+		{
+			"name": "Delete boat",
+			"id": "88964844-9cdf-2786-252a-ca985605fe2a",
+			"url": "https://cs496-191817.appspot.com/boats/ag5zfmNzNDk2LTE5MTgxN3IRCxIEQm9hdBiAgICA-JaVCQw",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"SUCCESS: boat was deleted": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: boat was deleted": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"198"
+			],
+			"allTests": [
+				{
+					"SUCCESS: boat was deleted": true
+				}
+			],
+			"time": "198",
+			"totalRequestTime": "198",
+			"iterationResults": {}
+		},
+		{
+			"name": "Delete slip",
+			"id": "63d3f200-721b-2980-edfa-4d50f0e8fa91",
+			"url": "https://cs496-191817.appspot.com/slips/ag5zfmNzNDk2LTE5MTgxN3IRCxIEU2xpcBiAgICA-JaVCgw",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"SUCCESS: slip was deleted": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: slip was deleted": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"283"
+			],
+			"allTests": [
+				{
+					"SUCCESS: slip was deleted": true
+				}
+			],
+			"time": "283",
+			"totalRequestTime": "283",
+			"iterationResults": {}
+		},
+		{
+			"name": "Create new boat",
+			"id": "203c0e44-642c-bcbf-6acb-cb439d301ca2",
+			"url": "https://cs496-191817.appspot.com/boats",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"tests": {
+				"SUCCESS: new boat was created": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: new boat was created": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"412"
+			],
+			"allTests": [
+				{
+					"SUCCESS: new boat was created": true
+				}
+			],
+			"time": "412",
+			"totalRequestTime": "412",
+			"iterationResults": {}
+		},
+		{
+			"name": "Create new slip",
+			"id": "4c55c6ee-8e80-5b9c-a335-72ac8591a862",
+			"url": "https://cs496-191817.appspot.com/slips",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"tests": {
+				"SUCCESS: new slip was created": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: new slip was created": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"298"
+			],
+			"allTests": [
+				{
+					"SUCCESS: new slip was created": true
+				}
+			],
+			"time": "298",
+			"totalRequestTime": "298",
+			"iterationResults": {}
+		},
+		{
+			"name": "Put boat in slip",
+			"id": "afdc7060-78fe-baf2-c904-ad07ce02932f",
+			"url": "https://cs496-191817.appspot.com/slips/ag5zfmNzNDk2LTE5MTgxN3IRCxIEU2xpcBiAgICAvNWTCgw/dock",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"tests": {
+				"SUCCESS: boat was placed in a slip": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: boat was placed in a slip": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"316"
+			],
+			"allTests": [
+				{
+					"SUCCESS: boat was placed in a slip": true
+				}
+			],
+			"time": "316",
+			"totalRequestTime": "316",
+			"iterationResults": {}
+		},
+		{
+			"name": "Create new boat",
+			"id": "0f24fdc9-1f7e-3f19-939d-cc98fe6ffea0",
+			"url": "https://cs496-191817.appspot.com/boats",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"tests": {
+				"SUCCESS: new boat was created": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: new boat was created": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"290"
+			],
+			"allTests": [
+				{
+					"SUCCESS: new boat was created": true
+				}
+			],
+			"time": "290",
+			"totalRequestTime": "290",
+			"iterationResults": {}
+		},
+		{
+			"name": "Put boat in slip - Error slip is occupied",
+			"id": "ba0804cc-542d-7c32-5ec3-70e035cf1010",
+			"url": "https://cs496-191817.appspot.com/slips/ag5zfmNzNDk2LTE5MTgxN3IRCxIEU2xpcBiAgICAvNWTCgw/dock",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"tests": {
+				"SUCCESS: Boat could not be placed in a slip": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: Boat could not be placed in a slip": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"167"
+			],
+			"allTests": [
+				{
+					"SUCCESS: Boat could not be placed in a slip": true
+				}
+			],
+			"time": "167",
+			"totalRequestTime": "167",
+			"iterationResults": {}
+		},
+		{
+			"name": "Delete slip",
+			"id": "3d04bed9-51cb-a8c8-e286-8dbca5bba7b5",
+			"url": "https://cs496-191817.appspot.com/slips/ag5zfmNzNDk2LTE5MTgxN3IRCxIEU2xpcBiAgICAvNWTCgw",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"SUCCESS: slip was deleted": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: slip was deleted": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"292"
+			],
+			"allTests": [
+				{
+					"SUCCESS: slip was deleted": true
+				}
+			],
+			"time": "292",
+			"totalRequestTime": "292",
+			"iterationResults": {}
+		},
+		{
+			"name": "Get a single boat - Out at sea",
+			"id": "70a122d0-474f-56c0-8093-0f46a72ecc39",
+			"url": "https://cs496-191817.appspot.com/boats/ag5zfmNzNDk2LTE5MTgxN3IRCxIEQm9hdBiAgICA3pCBCQw",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"SUCCESS: Slip removed and Boat no longer has a slip and is at sea.": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: Slip removed and Boat no longer has a slip and is at sea.": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"162"
+			],
+			"allTests": [
+				{
+					"SUCCESS: Slip removed and Boat no longer has a slip and is at sea.": true
+				}
+			],
+			"time": "162",
+			"totalRequestTime": "162",
+			"iterationResults": {}
+		},
+		{
+			"name": "Delete boat",
+			"id": "a6da262f-2353-f320-0172-0e97f280bcf4",
+			"url": "https://cs496-191817.appspot.com/boats/ag5zfmNzNDk2LTE5MTgxN3IRCxIEQm9hdBiAgICA3pCBCQw",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"SUCCESS: boat was deleted": true
+			},
+			"testPassFailCounts": {
+				"SUCCESS: boat was deleted": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"166"
+			],
+			"allTests": [
+				{
+					"SUCCESS: boat was deleted": true
+				}
+			],
+			"time": "166",
+			"totalRequestTime": "166",
+			"iterationResults": {}
+		},
+		{
+			"name": "Delete boats all",
+			"id": "8b813810-0b8b-22d8-9ee2-de0e69fa95c3",
+			"url": "https://cs496-191817.appspot.com/boats/",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"209"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "209",
+			"totalRequestTime": "209",
+			"iterationResults": {}
+		},
+		{
+			"name": "Delete slips all",
+			"id": "ef1069ff-d1a0-11f8-0c89-4d833c6701be",
+			"url": "https://cs496-191817.appspot.com/slips/",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"131"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "131",
+			"totalRequestTime": "131",
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 48,
+	"totalFail": 0,
+	"totalTime": 14184,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "Create new boat",
+			"id": "aff87903-7a9d-56bc-3c62-eaa7cc89560f",
+			"url": "https://cs496-191817.appspot.com/boats",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: new boat was created": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Get a single boat",
+			"id": "fb8a2b5d-b485-9c14-3e79-10b436097e6f",
+			"url": "https://cs496-191817.appspot.com/boats/ag5zfmNzNDk2LTE5MTgxN3IRCxIEQm9hdBiAgICAgICACgw",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: Boat is at sea.": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Create new boat - bad body",
+			"id": "e9d9f4a6-3c0b-105c-b928-39063daff414",
+			"url": "https://cs496-191817.appspot.com/boats",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: error caught, bad body": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Create new boat - bad body extra",
+			"id": "7d93f76c-67f7-d48d-3abc-55d0528a5ed8",
+			"url": "https://cs496-191817.appspot.com/boats",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: error caught, bad body": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Delete boat",
+			"id": "a17f02a0-170a-245c-ebe4-627649137bd6",
+			"url": "https://cs496-191817.appspot.com/boats/ag5zfmNzNDk2LTE5MTgxN3IRCxIEQm9hdBiAgICAgICACgw",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: boat was deleted": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Create new boat",
+			"id": "3d64f6ee-91eb-44d3-96a5-1aba891ef43e",
+			"url": "https://cs496-191817.appspot.com/boats",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: new boat was created": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Patch boat",
+			"id": "dd597597-d109-ac12-63e2-e8f4ea6a6eb7",
+			"url": "https://cs496-191817.appspot.com/boats/ag5zfmNzNDk2LTE5MTgxN3IRCxIEQm9hdBiAgICA-MKECgw",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: boat data was updated": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Patch boat - bad already at sea",
+			"id": "5f0e0712-032e-1c08-60e5-363978b8787e",
+			"url": "https://cs496-191817.appspot.com/boats/ag5zfmNzNDk2LTE5MTgxN3IRCxIEQm9hdBiAgICA-MKECgw",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: error caught, bad boat id": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Patch boat - bad needs a slip",
+			"id": "60233dfb-0c76-14a8-490e-5042c5835305",
+			"url": "https://cs496-191817.appspot.com/boats/ag5zfmNzNDk2LTE5MTgxN3IRCxIEQm9hdBiAgICA-MKECgw",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: error caught, bad boat id": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Patch boat - bad boat id",
+			"id": "f24da4fc-cd72-2efb-7d73-bd89b754758d",
+			"url": "https://cs496-191817.appspot.com/boats/aghkZ",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: error caught, bad boat id": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Patch boat - bad body",
+			"id": "85e14ec9-46bd-c284-0989-5d4e4846b895",
+			"url": "https://cs496-191817.appspot.com/boats/ag5zfmNzNDk2LTE5MTgxN3IRCxIEQm9hdBiAgICA-MKECgw",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: error caught, bad body": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Delete boat",
+			"id": "0ccfc92b-ca68-ef2f-c959-b7b123c46407",
+			"url": "https://cs496-191817.appspot.com/boats/ag5zfmNzNDk2LTE5MTgxN3IRCxIEQm9hdBiAgICA-MKECgw",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: boat was deleted": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Create new slip",
+			"id": "c457d2e9-1023-a39c-395d-3136e4691318",
+			"url": "https://cs496-191817.appspot.com/slips",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: new slip was created": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Get a single slip",
+			"id": "bdce01dc-2143-5ee4-f161-68d290fcde6f",
+			"url": "https://cs496-191817.appspot.com/slips/ag5zfmNzNDk2LTE5MTgxN3IRCxIEU2xpcBiAgICAvKGCCgw",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: Slip is empty.": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Create new slip - bad body",
+			"id": "903703aa-17d0-764c-9ac7-646612f784a8",
+			"url": "https://cs496-191817.appspot.com/slips",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: error caught, bad body": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Create new slip - bad slip number",
+			"id": "7b947f75-a090-1c17-5dcd-ca2e55a84199",
+			"url": "https://cs496-191817.appspot.com/slips",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: error caught, bad slip number": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Patch slip",
+			"id": "01be6e99-6794-02c6-c562-a1fe97b72394",
+			"url": "https://cs496-191817.appspot.com/slips/ag5zfmNzNDk2LTE5MTgxN3IRCxIEU2xpcBiAgICAvKGCCgw",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: slip 'number' was updated": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Patch slip - bad body",
+			"id": "4f122a47-9b3a-1af1-05f4-3fbc6ab5b307",
+			"url": "https://cs496-191817.appspot.com/slips/ag5zfmNzNDk2LTE5MTgxN3IRCxIEU2xpcBiAgICAvKGCCgw",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: error caught, bad body": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Patch slip - no id",
+			"id": "f20eeec6-6a2d-9163-cfa8-afbbc000b0c6",
+			"url": "https://cs496-191817.appspot.com/slips/",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: error caught, bad slip id": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Patch slip - bad slip id",
+			"id": "95fdf944-502c-914c-664a-15c5bdd183fe",
+			"url": "https://cs496-191817.appspot.com/slips/aghkZ",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: error caught, bad slip id": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Delete slip",
+			"id": "cca4da95-9c0d-2e4d-4164-c8e48592e83a",
+			"url": "https://cs496-191817.appspot.com/slips/ag5zfmNzNDk2LTE5MTgxN3IRCxIEU2xpcBiAgICAvKGCCgw",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: slip was deleted": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Create new boat",
+			"id": "752889a1-55e6-a67a-3a71-0d206440985c",
+			"url": "https://cs496-191817.appspot.com/boats",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: new boat was created": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Create new slip",
+			"id": "3d5ba7cc-96af-f6b2-573c-ca8a20793750",
+			"url": "https://cs496-191817.appspot.com/slips",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: new slip was created": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Put boat in slip",
+			"id": "2093aa3f-0e84-6863-19c2-5c96c4c6381a",
+			"url": "https://cs496-191817.appspot.com/slips/ag5zfmNzNDk2LTE5MTgxN3IRCxIEU2xpcBiAgICA3pCBCgw/dock",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: boat was placed in a slip": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Delete boat",
+			"id": "882a16aa-c835-0335-a23f-0f2d44a312d7",
+			"url": "https://cs496-191817.appspot.com/boats/ag5zfmNzNDk2LTE5MTgxN3IRCxIEQm9hdBiAgICA2uOGCgw",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: boat was deleted": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Get a single slip",
+			"id": "a0ee060f-7131-6794-eb99-e349c0395df1",
+			"url": "https://cs496-191817.appspot.com/slips/ag5zfmNzNDk2LTE5MTgxN3IRCxIEU2xpcBiAgICA3pCBCgw",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: Boat is in slip and current_boat: Boat ID and arrival_date: 1/31/2018": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Delete slip",
+			"id": "320d3750-9e75-e651-82c0-c86db09c170d",
+			"url": "https://cs496-191817.appspot.com/slips/ag5zfmNzNDk2LTE5MTgxN3IRCxIEU2xpcBiAgICA3pCBCgw",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: slip was deleted": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Create new slip",
+			"id": "06f41f81-92f6-f0f7-e72e-2791d58a1617",
+			"url": "https://cs496-191817.appspot.com/slips",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: new slip was created": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Create new boat",
+			"id": "88463091-c701-4c3c-d643-50939e6912ee",
+			"url": "https://cs496-191817.appspot.com/boats",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: new boat was created": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Put boat in slip",
+			"id": "eec43db4-40e2-03a3-f6f2-ce1a2bab37e9",
+			"url": "https://cs496-191817.appspot.com/slips/ag5zfmNzNDk2LTE5MTgxN3IRCxIEU2xpcBiAgICA-JaVCgw/dock",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: boat was placed in a slip": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Delete boat",
+			"id": "777587c1-4244-842c-f915-3efae315fc6b",
+			"url": "https://cs496-191817.appspot.com/boats/ag5zfmNzNDk2LTE5MTgxN3IRCxIEQm9hdBiAgICA2reXCgw",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: boat was deleted": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Get a single slip",
+			"id": "f97770e8-31fd-79e9-c256-9456c082b388",
+			"url": "https://cs496-191817.appspot.com/slips/ag5zfmNzNDk2LTE5MTgxN3IRCxIEU2xpcBiAgICA-JaVCgw",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: Boat information was removed from slip.": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Create new boat",
+			"id": "baaaa8ae-e6c2-9695-c4b0-f8bc29accdb9",
+			"url": "https://cs496-191817.appspot.com/boats",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: new boat was created": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Put boat in slip",
+			"id": "7fd47077-9f35-fe12-b2e3-25fc6962bbb7",
+			"url": "https://cs496-191817.appspot.com/slips/ag5zfmNzNDk2LTE5MTgxN3IRCxIEU2xpcBiAgICA-JaVCgw/dock",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: boat was placed in a slip": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Patch boat - send to sea",
+			"id": "8b208836-8bfa-c1d0-7b20-1c68a12ea53b",
+			"url": "https://cs496-191817.appspot.com/boats/ag5zfmNzNDk2LTE5MTgxN3IRCxIEQm9hdBiAgICA-JaVCQw",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: send boat out to sea from slip": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Get a single boat",
+			"id": "58947718-1181-cf0c-0150-a8d7d5366ebb",
+			"url": "https://cs496-191817.appspot.com/boats/ag5zfmNzNDk2LTE5MTgxN3IRCxIEQm9hdBiAgICA-JaVCQw",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: Boat no longer has a slip and is at sea.": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Get a single slip",
+			"id": "22b45d59-5916-3a43-966e-f01002903d7f",
+			"url": "https://cs496-191817.appspot.com/slips/ag5zfmNzNDk2LTE5MTgxN3IRCxIEU2xpcBiAgICA-JaVCgw",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: Boat information was removed from slip.": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "EXTRA CREDIT Depature History",
+			"id": "a12ed8cc-5020-7faf-bc13-d23b370dde34",
+			"url": "https://cs496-191817.appspot.com/slips/ag5zfmNzNDk2LTE5MTgxN3IRCxIEU2xpcBiAgICA-JaVCgw",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"EXTRA CREDIT: Slips departure_history is updated to two boats.": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Delete boat",
+			"id": "88964844-9cdf-2786-252a-ca985605fe2a",
+			"url": "https://cs496-191817.appspot.com/boats/ag5zfmNzNDk2LTE5MTgxN3IRCxIEQm9hdBiAgICA-JaVCQw",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: boat was deleted": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Delete slip",
+			"id": "63d3f200-721b-2980-edfa-4d50f0e8fa91",
+			"url": "https://cs496-191817.appspot.com/slips/ag5zfmNzNDk2LTE5MTgxN3IRCxIEU2xpcBiAgICA-JaVCgw",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: slip was deleted": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Create new boat",
+			"id": "203c0e44-642c-bcbf-6acb-cb439d301ca2",
+			"url": "https://cs496-191817.appspot.com/boats",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: new boat was created": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Create new slip",
+			"id": "4c55c6ee-8e80-5b9c-a335-72ac8591a862",
+			"url": "https://cs496-191817.appspot.com/slips",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: new slip was created": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Put boat in slip",
+			"id": "afdc7060-78fe-baf2-c904-ad07ce02932f",
+			"url": "https://cs496-191817.appspot.com/slips/ag5zfmNzNDk2LTE5MTgxN3IRCxIEU2xpcBiAgICAvNWTCgw/dock",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: boat was placed in a slip": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Create new boat",
+			"id": "0f24fdc9-1f7e-3f19-939d-cc98fe6ffea0",
+			"url": "https://cs496-191817.appspot.com/boats",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: new boat was created": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Put boat in slip - Error slip is occupied",
+			"id": "ba0804cc-542d-7c32-5ec3-70e035cf1010",
+			"url": "https://cs496-191817.appspot.com/slips/ag5zfmNzNDk2LTE5MTgxN3IRCxIEU2xpcBiAgICAvNWTCgw/dock",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: Boat could not be placed in a slip": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Delete slip",
+			"id": "3d04bed9-51cb-a8c8-e286-8dbca5bba7b5",
+			"url": "https://cs496-191817.appspot.com/slips/ag5zfmNzNDk2LTE5MTgxN3IRCxIEU2xpcBiAgICAvNWTCgw",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: slip was deleted": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Get a single boat - Out at sea",
+			"id": "70a122d0-474f-56c0-8093-0f46a72ecc39",
+			"url": "https://cs496-191817.appspot.com/boats/ag5zfmNzNDk2LTE5MTgxN3IRCxIEQm9hdBiAgICA3pCBCQw",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: Slip removed and Boat no longer has a slip and is at sea.": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Delete boat",
+			"id": "a6da262f-2353-f320-0172-0e97f280bcf4",
+			"url": "https://cs496-191817.appspot.com/boats/ag5zfmNzNDk2LTE5MTgxN3IRCxIEQm9hdBiAgICA3pCBCQw",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"SUCCESS: boat was deleted": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Delete boats all",
+			"id": "8b813810-0b8b-22d8-9ee2-de0e69fa95c3",
+			"url": "https://cs496-191817.appspot.com/boats/",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "Delete slips all",
+			"id": "ef1069ff-d1a0-11f8-0c89-4d833c6701be",
+			"url": "https://cs496-191817.appspot.com/slips/",
+			"time": "2018-02-03T09:16:42.082Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {}
+		}
+	],
+	"synced": false
+}

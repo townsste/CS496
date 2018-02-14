@@ -1,0 +1,2019 @@
+{
+	"info": {
+		"name": "REST Planning and Implementation",
+		"_postman_id": "bd71f073-b2f3-da88-90e4-81e6b3065b89",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create new boat",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b39d3b5f-5897-411e-a3d5-d473ed72f7b8",
+						"type": "text/javascript",
+						"exec": [
+							"//Set environment gist ID for later use",
+							"var object = JSON.parse(responseBody);",
+							"pm.environment.set(\"boatID\", object.id);",
+							"",
+							"tests[\"SUCCESS: new boat was created\"] = responseBody.has(\"id\") && responseBody.has(\"name\") && responseBody.has(\"length\") && responseBody.has(\"type\")  && responseBody.has(\"at_sea\") && responseBody.has(\"self\") && responseCode.code === 201;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"wilson\", \"length\": 6, \"type\": \"raft\"}"
+				},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/boats",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"boats"
+					]
+				},
+				"description": "Create new boat"
+			},
+			"response": []
+		},
+		{
+			"name": "Get a single boat",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b1758a07-8190-450a-a85d-0677f4f5115d",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"SUCCESS: Boat is at sea.\"] = responseBody.has(\"true\") && responseCode.code === 200;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/boats/{{boatID}}",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"boats",
+						"{{boatID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new boat - bad body",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "18947850-ad68-4f1c-846e-cc955d17c898",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"SUCCESS: error caught, bad body\"] = responseBody.has(\"Invalid request: Req: name str, type str, length int\") && responseCode.code === 400;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\": \"jester\", \"length\": 30, \"type\": \"liner\"}"
+				},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/boats",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"boats"
+					]
+				},
+				"description": "Create new boat"
+			},
+			"response": []
+		},
+		{
+			"name": "Create new boat - bad body extra",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "03a305a1-a595-4e44-abdf-e4f6f92b71dc",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"SUCCESS: error caught, bad body\"] = responseBody.has(\"Invalid request: Req: name str, type str, length int\") && responseCode.code === 400;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\": \"jester\", \"length\": 30, \"type\": \"liner\", \"extras\":\"bad times\"}"
+				},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/boats",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"boats"
+					]
+				},
+				"description": "Create new boat"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete boat",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "959c21ba-848f-44d3-8173-26983288d021",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"SUCCESS: boat was deleted\"] = responseBody.has(\"Success: The boat was deleted\") && responseCode.code === 200;",
+							"",
+							"//Cleanup environment variables",
+							"pm.environment.unset(\"boatID\");"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/boats/{{boatID}}",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"boats",
+						"{{boatID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new boat",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b39d3b5f-5897-411e-a3d5-d473ed72f7b8",
+						"type": "text/javascript",
+						"exec": [
+							"//Set environment gist ID for later use",
+							"var object = JSON.parse(responseBody);",
+							"pm.environment.set(\"boatID\", object.id);",
+							"",
+							"tests[\"SUCCESS: new boat was created\"] = responseBody.has(\"id\") && responseBody.has(\"name\") && responseBody.has(\"length\") && responseBody.has(\"type\")  && responseBody.has(\"at_sea\") && responseBody.has(\"self\") && responseCode.code === 201;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"wilson2\", \"length\": 12, \"type\": \"raft\"}"
+				},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/boats",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"boats"
+					]
+				},
+				"description": "Create new boat"
+			},
+			"response": []
+		},
+		{
+			"name": "Patch boat",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "1ff18350-358c-47df-875b-c151f2f6814d",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"SUCCESS: boat data was updated\"] = responseBody.has(\"Success: Boat data was updated\") && responseCode.code === 200;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"crazy\"}"
+				},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/boats/{{boatID}}",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"boats",
+						"{{boatID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patch boat - bad already at sea",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "24e897b1-3cdb-400e-aead-86cbd5411e2f",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"SUCCESS: error caught, bad boat id\"] = responseBody.has(\"Error: Boat is already at sea\") && responseCode.code === 400;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"at_sea\": true}"
+				},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/boats/{{boatID}}",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"boats",
+						"{{boatID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patch boat - bad needs a slip",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "68314bda-e2a0-4986-89d2-3c76ae9d8ab7",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"SUCCESS: error caught, bad boat id\"] = responseBody.has(\"Error: Boat needs to be in slip\") && responseCode.code === 400;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"at_sea\": false}"
+				},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/boats/{{boatID}}",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"boats",
+						"{{boatID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patch boat - bad boat id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "254daa14-2297-485d-9c9e-5201122e5288",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"SUCCESS: error caught, bad boat id\"] = responseBody.has(\"Error: The selected boat not found\") && responseCode.code === 404;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"tabber\", \"type\":\"new\", \"length\":1}"
+				},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/boats/aghkZ",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"boats",
+						"aghkZ"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patch boat - bad body",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "1606fb27-0179-4c33-a7a2-d3387cc7b4b0",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"SUCCESS: error caught, bad body\"] = responseBody.has(\"Invalid request. Use name, type, or length\") && responseCode.code === 400;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"nam\": \"crazy\", \"length\": 43}"
+				},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/boats/{{boatID}}",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"boats",
+						"{{boatID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete boat",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a4d3a2e9-b7c2-4863-bd1f-4975da4a23a6",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"SUCCESS: boat was deleted\"] = responseBody.has(\"Success: The boat was deleted\") && responseCode.code === 200;",
+							"",
+							"//Cleanup environment variables",
+							"pm.environment.unset(\"boatID\");"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/boats/{{boatID}}",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"boats",
+						"{{boatID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new slip",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c895d515-87d5-4eea-b38c-d265832398ba",
+						"type": "text/javascript",
+						"exec": [
+							"//Set environment gist ID for later use",
+							"var object = JSON.parse(responseBody);",
+							"pm.environment.set(\"slipID\", object.id);",
+							"",
+							"tests[\"SUCCESS: new slip was created\"] = responseBody.has(\"id\") && responseBody.has(\"number\") && responseBody.has(\"current_boat\") && responseBody.has(\"arrival_date\") && responseBody.has(\"self\") && responseCode.code === 201;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"number\": 3}"
+				},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/slips",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"slips"
+					]
+				},
+				"description": "Create new slip"
+			},
+			"response": []
+		},
+		{
+			"name": "Get a single slip",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "54d97e35-7856-4e11-a0f2-2b87c8001ae6",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"SUCCESS: Slip is empty.\"] = responseBody.has(\"3\") && responseBody.has(\"null\") && responseBody.has(\"null\") && responseBody.has(\"null\") && responseCode.code === 200;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/slips/{{slipID}}",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"slips",
+						"{{slipID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new slip - bad body",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "5610c393-d2fb-4971-a130-856030926eaf",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"SUCCESS: error caught, bad body\"] = responseBody.has(\"Invalid request: Req: number int, current_boat str, arrival_date str\") && responseCode.code === 400;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\": \"information\"}"
+				},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/slips",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"slips"
+					]
+				},
+				"description": "Create new slip"
+			},
+			"response": []
+		},
+		{
+			"name": "Create new slip - bad slip number",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3f46751e-5d3b-4153-873f-e7b4541b7914",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"SUCCESS: error caught, bad slip number\"] = responseBody.has(\"Invalid request: number already exists\") && responseCode.code === 400;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"number\": 3}"
+				},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/slips",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"slips"
+					]
+				},
+				"description": "Create new slip"
+			},
+			"response": []
+		},
+		{
+			"name": "Patch slip",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "63142093-5458-4c27-a0da-0b5f042d0414",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"SUCCESS: slip 'number' was updated\"] = responseBody.has(\"Success: slip 'number' was updated\") && responseCode.code === 200;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"number\": 12}"
+				},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/slips/{{slipID}}",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"slips",
+						"{{slipID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patch slip - bad body",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "39c244ef-03ac-488a-a2fd-e1a5b4815e48",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"SUCCESS: error caught, bad body\"] = responseBody.has(\"Invalid request: Check the format and only update number\") && responseCode.code === 400;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"number\": 5, \"id\": \"information\"}"
+				},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/slips/{{slipID}}",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"slips",
+						"{{slipID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patch slip - no id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "86e1e54b-a53e-45a4-9e39-cf5b37939121",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"SUCCESS: error caught, bad slip id\"] = responseBody.has(\"Invalid request: No id given\") && responseCode.code === 400;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"number\": 5}"
+				},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/slips/",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"slips",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patch slip - bad slip id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "51b540d8-f02a-4fb4-b6be-6ddb233d94a6",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"SUCCESS: error caught, bad slip id\"] = responseBody.has(\"Error: The selected slip not found\") && responseCode.code === 404;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"number\": 5}"
+				},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/slips/aghkZ",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"slips",
+						"aghkZ"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete slip",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c1f9e024-dea7-453f-90a8-b2318b9cc6c4",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"SUCCESS: slip was deleted\"] = responseBody.has(\"Success: The slip was deleted\") && responseCode.code === 200;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/slips/{{slipID}}",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"slips",
+						"{{slipID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new boat",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b39d3b5f-5897-411e-a3d5-d473ed72f7b8",
+						"type": "text/javascript",
+						"exec": [
+							"//Set environment gist ID for later use",
+							"var object = JSON.parse(responseBody);",
+							"pm.environment.set(\"boatID\", object.id);",
+							"",
+							"tests[\"SUCCESS: new boat was created\"] = responseBody.has(\"id\") && responseBody.has(\"name\") && responseBody.has(\"length\") && responseBody.has(\"type\")  && responseBody.has(\"at_sea\") && responseBody.has(\"self\") && responseCode.code === 201;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"wilson\", \"length\": 6, \"type\": \"raft\"}"
+				},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/boats",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"boats"
+					]
+				},
+				"description": "Create new boat"
+			},
+			"response": []
+		},
+		{
+			"name": "Create new slip",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "373af782-bede-4267-96f2-e202927c5f8a",
+						"type": "text/javascript",
+						"exec": [
+							"//Set environment gist ID for later use",
+							"var object = JSON.parse(responseBody);",
+							"pm.environment.set(\"slipID\", object.id);",
+							"",
+							"tests[\"SUCCESS: new slip was created\"] = responseBody.has(\"id\") && responseBody.has(\"number\") && responseBody.has(\"current_boat\") && responseBody.has(\"arrival_date\") && responseBody.has(\"self\") && responseCode.code === 201;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"number\": 1}"
+				},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/slips",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"slips"
+					]
+				},
+				"description": "Create new slip"
+			},
+			"response": []
+		},
+		{
+			"name": "Put boat in slip",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f429240d-c1c6-4f86-8f93-57f9b8f19466",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"SUCCESS: boat was placed in a slip\"] = responseCode.code === 201;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"current_boat\":\"{{boatID}}\", \"arrival_date\":\"1/31/2018\"}"
+				},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/slips/{{slipID}}/dock",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"slips",
+						"{{slipID}}",
+						"dock"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete boat",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f0b65e6a-12ec-48df-9b93-2445303e3555",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"SUCCESS: boat was deleted\"] = responseBody.has(\"Success: The boat was deleted\") && responseCode.code === 200;",
+							"",
+							"//Cleanup environment variables",
+							"pm.environment.unset(\"boatID\");"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/boats/{{boatID}}",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"boats",
+						"{{boatID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a single slip",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "1bd01723-f9f8-4f38-bd5e-bd24ad2d8633",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"SUCCESS: Boat is in slip and current_boat: Boat ID and arrival_date: 1/31/2018\"] = responseBody.has(\"1/31/2018\") && responseCode.code === 200;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/slips/{{slipID}}",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"slips",
+						"{{slipID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete slip",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c1f9e024-dea7-453f-90a8-b2318b9cc6c4",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"SUCCESS: slip was deleted\"] = responseBody.has(\"Success: The slip was deleted\") && responseCode.code === 200;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/slips/{{slipID}}",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"slips",
+						"{{slipID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new slip",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "373af782-bede-4267-96f2-e202927c5f8a",
+						"type": "text/javascript",
+						"exec": [
+							"//Set environment gist ID for later use",
+							"var object = JSON.parse(responseBody);",
+							"pm.environment.set(\"slipID\", object.id);",
+							"",
+							"tests[\"SUCCESS: new slip was created\"] = responseBody.has(\"id\") && responseBody.has(\"number\") && responseBody.has(\"current_boat\") && responseBody.has(\"arrival_date\") && responseBody.has(\"self\") && responseCode.code === 201;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"number\": 7}"
+				},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/slips",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"slips"
+					]
+				},
+				"description": "Create new slip"
+			},
+			"response": []
+		},
+		{
+			"name": "Create new boat",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b39d3b5f-5897-411e-a3d5-d473ed72f7b8",
+						"type": "text/javascript",
+						"exec": [
+							"//Set environment gist ID for later use",
+							"var object = JSON.parse(responseBody);",
+							"pm.environment.set(\"boatID\", object.id);",
+							"",
+							"tests[\"SUCCESS: new boat was created\"] = responseBody.has(\"id\") && responseBody.has(\"name\") && responseBody.has(\"length\") && responseBody.has(\"type\")  && responseBody.has(\"at_sea\") && responseBody.has(\"self\") && responseCode.code === 201;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"wilson\", \"length\": 6, \"type\": \"raft\"}"
+				},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/boats",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"boats"
+					]
+				},
+				"description": "Create new boat"
+			},
+			"response": []
+		},
+		{
+			"name": "Put boat in slip",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f429240d-c1c6-4f86-8f93-57f9b8f19466",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"SUCCESS: boat was placed in a slip\"] = responseCode.code === 201;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"current_boat\":\"{{boatID}}\", \"arrival_date\":\"1/31/2018\"}"
+				},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/slips/{{slipID}}/dock",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"slips",
+						"{{slipID}}",
+						"dock"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete boat",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c995a70b-d70b-47f7-886a-b81e79e1020a",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"SUCCESS: boat was deleted\"] = responseBody.has(\"Success: The boat was deleted\") && responseCode.code === 200;",
+							"",
+							"//Cleanup environment variables",
+							"pm.environment.unset(\"boatID\");"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/boats/{{boatID}}",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"boats",
+						"{{boatID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a single slip",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a764819d-441d-4539-9736-140bfc686d34",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"SUCCESS: Boat information was removed from slip.\"] = responseBody.has(\"null\") && responseBody.has(\"null\") && responseCode.code === 200;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/slips/{{slipID}}",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"slips",
+						"{{slipID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new boat",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b39d3b5f-5897-411e-a3d5-d473ed72f7b8",
+						"type": "text/javascript",
+						"exec": [
+							"//Set environment gist ID for later use",
+							"var object = JSON.parse(responseBody);",
+							"pm.environment.set(\"boatID\", object.id);",
+							"",
+							"tests[\"SUCCESS: new boat was created\"] = responseBody.has(\"id\") && responseBody.has(\"name\") && responseBody.has(\"length\") && responseBody.has(\"type\")  && responseBody.has(\"at_sea\") && responseBody.has(\"self\") && responseCode.code === 201;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"jester\", \"length\": 30, \"type\": \"liner\"}"
+				},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/boats",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"boats"
+					]
+				},
+				"description": "Create new boat"
+			},
+			"response": []
+		},
+		{
+			"name": "Put boat in slip",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f429240d-c1c6-4f86-8f93-57f9b8f19466",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"SUCCESS: boat was placed in a slip\"] = responseCode.code === 201;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"current_boat\":\"{{boatID}}\", \"arrival_date\":\"1/31/2018\"}"
+				},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/slips/{{slipID}}/dock",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"slips",
+						"{{slipID}}",
+						"dock"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patch boat - send to sea",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "821b08bd-0fe3-4415-a811-2d852bc8b868",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"SUCCESS: send boat out to sea from slip\"] = responseBody.has(\"Success: Boat data was updated\") && responseCode.code === 200;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"at_sea\": true}"
+				},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/boats/{{boatID}}",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"boats",
+						"{{boatID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a single boat",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0065aafe-2670-4bdb-85f1-8c603172bf48",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"SUCCESS: Boat no longer has a slip and is at sea.\"] = responseBody.has(\"true\") && responseBody.has(\"null\") && responseCode.code === 200;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/boats/{{boatID}}",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"boats",
+						"{{boatID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a single slip",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3aaba1de-5e25-4776-9fc3-5f09aeccbfa3",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"SUCCESS: Boat information was removed from slip.\"] = responseBody.has(\"null\") && responseBody.has(\"null\") && responseCode.code === 200;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/slips/{{slipID}}",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"slips",
+						"{{slipID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EXTRA CREDIT Depature History",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "9bc77861-e229-49ba-8125-65ebb9e31e2f",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"EXTRA CREDIT: Slips departure_history is updated to two boats.\"] = responseBody.has(\"{Boat: wilson, Arrival: 1/31/2018}{Boat: jester, Arrival: 1/31/2018}\") && responseCode.code === 200;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/slips/{{slipID}}",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"slips",
+						"{{slipID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete boat",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "91f2a4f3-73a0-420b-9da5-696b6dc5f639",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"SUCCESS: boat was deleted\"] = responseBody.has(\"Success: The boat was deleted\") && responseCode.code === 200;",
+							"",
+							"//Cleanup environment variables",
+							"pm.environment.unset(\"boatID\");"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/boats/{{boatID}}",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"boats",
+						"{{boatID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete slip",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c1f9e024-dea7-453f-90a8-b2318b9cc6c4",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"SUCCESS: slip was deleted\"] = responseBody.has(\"Success: The slip was deleted\") && responseCode.code === 200;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/slips/{{slipID}}",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"slips",
+						"{{slipID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new boat",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b39d3b5f-5897-411e-a3d5-d473ed72f7b8",
+						"type": "text/javascript",
+						"exec": [
+							"//Set environment gist ID for later use",
+							"var object = JSON.parse(responseBody);",
+							"pm.environment.set(\"boatID\", object.id);",
+							"",
+							"tests[\"SUCCESS: new boat was created\"] = responseBody.has(\"id\") && responseBody.has(\"name\") && responseBody.has(\"length\") && responseBody.has(\"type\")  && responseBody.has(\"at_sea\") && responseBody.has(\"self\") && responseCode.code === 201;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"wilson\", \"length\": 6, \"type\": \"raft\"}"
+				},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/boats",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"boats"
+					]
+				},
+				"description": "Create new boat"
+			},
+			"response": []
+		},
+		{
+			"name": "Create new slip",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "373af782-bede-4267-96f2-e202927c5f8a",
+						"type": "text/javascript",
+						"exec": [
+							"//Set environment gist ID for later use",
+							"var object = JSON.parse(responseBody);",
+							"pm.environment.set(\"slipID\", object.id);",
+							"",
+							"tests[\"SUCCESS: new slip was created\"] = responseBody.has(\"id\") && responseBody.has(\"number\") && responseBody.has(\"current_boat\") && responseBody.has(\"arrival_date\") && responseBody.has(\"self\") && responseCode.code === 201;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"number\": 1}"
+				},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/slips",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"slips"
+					]
+				},
+				"description": "Create new slip"
+			},
+			"response": []
+		},
+		{
+			"name": "Put boat in slip",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f429240d-c1c6-4f86-8f93-57f9b8f19466",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"SUCCESS: boat was placed in a slip\"] = responseCode.code === 201;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"current_boat\":\"{{boatID}}\", \"arrival_date\":\"1/31/2018\"}"
+				},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/slips/{{slipID}}/dock",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"slips",
+						"{{slipID}}",
+						"dock"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new boat",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b39d3b5f-5897-411e-a3d5-d473ed72f7b8",
+						"type": "text/javascript",
+						"exec": [
+							"//Set environment gist ID for later use",
+							"var object = JSON.parse(responseBody);",
+							"pm.environment.set(\"boatID\", object.id);",
+							"",
+							"tests[\"SUCCESS: new boat was created\"] = responseBody.has(\"id\") && responseBody.has(\"name\") && responseBody.has(\"length\") && responseBody.has(\"type\")  && responseBody.has(\"at_sea\") && responseBody.has(\"self\") && responseCode.code === 201;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"jester\", \"length\": 30, \"type\": \"liner\"}"
+				},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/boats",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"boats"
+					]
+				},
+				"description": "Create new boat"
+			},
+			"response": []
+		},
+		{
+			"name": "Put boat in slip - Error slip is occupied",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8aab0d9c-e08f-426f-8826-64b58db6f946",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"SUCCESS: Boat could not be placed in a slip\"] = responseBody.has(\"Forbidden: The selected slip is occupied\") && responseCode.code === 403;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"current_boat\":\"{{boatID}}\", \"arrival_date\":\"1/31/2018\"}"
+				},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/slips/{{slipID}}/dock",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"slips",
+						"{{slipID}}",
+						"dock"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete slip",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c1f9e024-dea7-453f-90a8-b2318b9cc6c4",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"SUCCESS: slip was deleted\"] = responseBody.has(\"Success: The slip was deleted\") && responseCode.code === 200;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/slips/{{slipID}}",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"slips",
+						"{{slipID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a single boat - Out at sea",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d6dd400e-976b-48b8-ab77-ac95154cbddf",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"SUCCESS: Slip removed and Boat no longer has a slip and is at sea.\"] = responseBody.has(\"true\") && responseBody.has(\"null\") && responseCode.code === 200;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/boats/{{boatID}}",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"boats",
+						"{{boatID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete boat",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0886179f-106c-4340-9129-d266865d1ab1",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"SUCCESS: boat was deleted\"] = responseBody.has(\"Success: The boat was deleted\") && responseCode.code === 200;",
+							"",
+							"//Cleanup environment variables",
+							"pm.environment.unset(\"boatID\");"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/boats/{{boatID}}",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"boats",
+						"{{boatID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete boats all",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8e90f45a-56e2-452d-814a-94b1db493ec6",
+						"type": "text/javascript",
+						"exec": [
+							"//Cleanup environment variables",
+							"pm.environment.unset(\"boatID\");"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/boats/",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"boats",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete slips all",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ab7f8a72-9200-4c85-b842-a1df3d394746",
+						"type": "text/javascript",
+						"exec": [
+							"//Cleanup environment variables",
+							"pm.environment.unset(\"slipID\");"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://cs496-191817.appspot.com/slips/",
+					"protocol": "https",
+					"host": [
+						"cs496-191817",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"slips",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
