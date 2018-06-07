@@ -1,0 +1,112 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Townsend Final Project REST API</title>
+	</head>
+	<body>
+		<h1>Townsend Final Project REST NOTES</h1>
+		<div>
+			<center><h2>Here are the notes that will help with the demonstration of the REST API.</h2></center>
+			<div>
+				<h3>App is hosted at:</h3>
+					<p>https://cs496-rest-final-townsend.appspot.com</p>
+			</div>
+			<div>
+				<h3>Making API Calls</h3>
+				<p>To make api calls you will need the hosted url in each call as the {base url}<br>
+				Example: GET https://cs496-rest-final-townsend.appspot.com<br><br>
+				Anything in {} or double {}, will need to be filled in as indicated below.<br>
+				After a tenant or property is created then they will have a unique ID attached.<br><br>
+				You can get this ID by a GET tenants or properties call.<br>
+				Example: GET https://cs496-rest-final-townsend.appspot.com/tenants<br><br>
+				This call will return a json with specific information.<br>
+				Parse through the json to get the ID.<br>
+				This ID will be required to make modifications.</p>
+			</div>
+			<div>
+				<p>Goodluck, have fun, and thank you visiting.<br>
+				---Stephen Townsend</p>
+			</div>
+			<div>
+				<h3>All the Rest API calls:</h3>
+					<ul>
+						<li>GET 	/tenants   /{tenantID} 				</li>
+						<li>GET 	/tenants 							</li>
+						<li>GET 	/properties     /{propertyID}			</li>
+						<li>GET 	/properties 							</li>
+						<li>POST 	/tenants 							</li>
+						<li>POST 	/properties 							</li>
+						<li>PATCH 	/tenants   /{tenantID} 				</li>
+						<li>PATCH 	/properties     /{propertyID} 			</li>
+						<li>PUT 	/properties     /{propertyID}    /move 	</li>
+						<li>DELETE	/properties     /{propertyID}			</li>
+						<li>DELETE	/properties							</li>
+						<li>DELETE 	/tenants   /{tenantID}				</li>
+						<li>DELETE	/tenants							</li>
+					</ul>
+			</div>
+			<div>
+				<h3>Information about calls:</h3>
+				<center><h4>TENANT URL’s</h4></center>
+					<p><b>POST /tenants</b><br>
+					Details: This call is used to create a tenant.  The inputs for the json body is going to be firstName, lastName, and pet.<br>
+					Input: {"firstName":"First Name Here", "lastName":"Last Name Here", "pet": "Pet Here"}<br>
+					Notes: All tenants are set to available as they are created</p>
+
+					<p><b>GET /tenants/{tenantID}</b><br>
+					Details: This call is used to get all the information about a specific tenant based on the supplied {tenantID}.</p>
+
+					<p><b>GET /tenants</b><br>
+					Details: This call is used to get a list of all the tenants and the information about each tenant.</p>
+
+					<p><b>PATCH /tenants/{tenantID}</b><br>
+					Details: This call is used to update tenant information.  This is also where a tenant will leave a property when this condition is meet.  These condition is being in a property.<br>
+					Input: {"firstName":"First Name Here", "lastName":"Last Name Here", "pet": "Pet Here"}<br>
+					Notes: To move a tenant out of a property see the optional input below<br>
+					Optional Input: {"available": true}</p>
+
+					<p><b>DELETE /tenants/{tenantID}</b><br>
+					Details: This call will delete a specific tenant based on the supplied {tenantID}</p>
+
+					<p><b>DELETE /tenants</b><br>
+					Details: This call will delete all of the tenants in the database.</p>
+
+				<center><h4>PROPERTY URL’s</h4></center>
+					<p><b>POST /properties</b><br>
+					Details: This call is used to create a property.  The only input for the json body is address.<br>
+					Input: {"address": string}</p>
+
+					<p><b>GET /properties</b><br>
+					Details: This call is used to get all the information about a specific property based on the supplied {propertyID}.</p>
+
+					<p><b>GET /properties/{propertyID}</b><br>
+					Details: This call is used to get a list of all the tenants and the information about each tenant.</p>
+
+					<p><b>PATCH 	/properties/{propertyID} </b><br>
+					Details: This call is used to update a property.  The only option is to modify the property address.<br>
+					Input: {"address": string}</p>
+
+					<p><b>DELETE /properties/{propertyID}</b><br>
+					Details: This call will delete a specific property based on the supplied {propertyID}</p>
+
+					<p><b>DELETE /properties</b><br>
+					Details: This call will delete all of the properties in the database.</p>
+
+				<center><h4>ADD A TENANT URL</h4></center>
+					<p><b>PUT /properties/{propertyID}/move</b><br>
+					Details: This call is used to place a tenant into a property.<br>
+					Input: {"current_tenant":"{tenantID}", "rent":”Rent Here”}</p>
+			</div>
+
+			<div>
+					<p>This application will also automatically keep track of the properties tenant history.<br>  
+					This is done at two times. Both times will require that a tenant to be in a property.<br>
+					First, when a tenant is called to be deleted.  Second, when a tenant is moving from available.<br>
+					This is done from the PATCH /tenants/{tenantID} call.<br>
+					The json body will need to have {available  =  true}.<br><br>
+
+					Both of these instances will place the tenant firstName and last name into the properties tenant_history.</p>
+			</div>
+		</div>
+	</body>
+</html>

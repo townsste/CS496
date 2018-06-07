@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.6.1/clipboard.min.js"></script>
+		<meta charset="UTF-8">
+		<title>Townsend OAuth 2.0</title>
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+		</head>
+	<body>
+		<h1>Townsend OAuth 2.0</h1>
+		<center><h2>Thank you</h2></center>
+		<div class="border">
+			<h3>Please see your information below</h3>
+			
+			<p>
+                Your token is:
+              </p>
+			  <p id="token_info_paragraph">
+                {{ token }}
+              </p>
+			  <button id="copy_to_clipboard_button" data-clipboard-target="#token_info_paragraph">
+                Copy Token to Clipboard
+              </button>
+			  <script>
+				new Clipboard('#copy_to_clipboard_button');
+				clipboard.on('success', function(e) {
+					console.info('Action:', e.action);
+					console.info('Text:', e.text);
+					console.info('Trigger:', e.trigger);
+
+					e.clearSelection();
+				});
+
+				clipboard.on('error', function(e) {
+					console.error('Action:', e.action);
+					console.error('Trigger:', e.trigger);
+				});
+			  </script>
+		</div>
+		<script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	</body>
+</html>
